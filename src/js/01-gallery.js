@@ -13,10 +13,10 @@ const items = [];
 
 galleryItems.forEach(element => {
   const galleryLink = document.createElement('a');
-  galleryLink.className = 'gallery__link';
+  galleryLink.classList.add('gallery__link');
   galleryLink.href = element.original;
   const galleryImage = document.createElement('img');
-  galleryImage.className = 'gallery__image';
+  galleryImage.classList.add('gallery__image');
   galleryImage.src = element.preview;
   galleryImage.setAttribute('title', element.description);
   galleryImage.alt = element.description;
